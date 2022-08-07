@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'hotelmenuapp',
     'rest_framework',
     'productapi',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [

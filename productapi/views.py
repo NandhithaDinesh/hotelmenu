@@ -132,7 +132,7 @@ class ProductViewSetView(ViewSet):
 class ProductModelViewSetView(ModelViewSet):
     serializer_class=ProductModelSerializer
     queryset=Products.objects.all()
-    authentication_classes = [authentication.BasicAuthentication]
+    authentication_classes = [authentication.TokenAuthentication]
     permission_classes = [permissions.IsAuthenticated]
 class UserModelViewSetView(ModelViewSet):
     serializer_class = UserSerializer
